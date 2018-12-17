@@ -1,0 +1,59 @@
+server:
+  ssl:
+    enabled: true
+    key-store: classpath:https_keystore.p12
+    key-alias: 1
+    key-store-password: chujian
+    key-store-type: PKCS12
+  port: 8443
+  http-port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/user_center?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: nL79JnEUKCim
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: mysql
+  #邮件
+  mail:
+    host: smtp.16801.com
+    port: 25
+    username: yangyao@16801.com
+    password: 26Y15q17
+    default-encoding: utf-8
+  thymeleaf:
+    cache: false
+    mode: HTML5
+    encoding: UTF-8
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+facebook:
+  access-token:
+    verify-url: https://graph.facebook.com/debug_token
+    get-token-url: https://graph.facebook.com/oauth/accessToken
+google:
+  user-login:
+    enable-verify: false
+chujian:
+  main-account: email
+  send-email:
+    base-path: https://test.hwtg.16801.com:8443
+  password:
+    enable-encode: true
+  visitor:
+    enable: true
+    username-prefix:
+  channel-user-login:
+    enable-verify: false
+  token:
+    key:
+      jks-filepath: chujian.jks
+      password: password
+      alias: chujian
