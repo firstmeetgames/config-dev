@@ -52,9 +52,8 @@ chujian:
     username-prefix:
   channel-user-login:
     enable-verify: false
-  jwt:
+  token:
     key:
-      enable: true
       jks-filepath: chujian.jks
       password: password
       alias: chujian
