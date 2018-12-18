@@ -44,7 +44,7 @@ google:
 chujian:
   main-account: email
   send-email:
-    base-path: https://localhost:8443
+    base-path: https://test.hwtg.16801.com:8443
   password:
     enable-encode: false
   visitor:
