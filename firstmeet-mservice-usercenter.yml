@@ -44,7 +44,10 @@ google:
 chujian:
   main-account: email
   send-email:
-    base-path: https://localhost:8443
+    forget-password:
+      theme: กู้คืนรหัสFirstmeet
+      expire-time: 30
+      base-path: https://localhost:8443
   password:
     enable-encode: false
   visitor:
