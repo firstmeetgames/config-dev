@@ -22,7 +22,7 @@ spring:
     host: smtp.16801.com
     port: 25
     username: thai-support@16801.com
-    password: n2QL0C1p9
+    password: 3a3d7d00gDN0Hdvj
     default-encoding: utf-8
   thymeleaf:
     cache: false
