@@ -13,7 +13,7 @@ server:
     basedir: "./"
     accesslog:
       enabled: true
-      directory: "./logs/access-log"
+      directory: ${FIRSTMEET_MSERVICE_DATA_BASEDIR:.}/logs/${HOSTNAME:1}/access-log
     customized.enable: true
     customized.accept-count: 100
     customized.max-threads: 200
@@ -28,9 +28,9 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
     platform: mysql
-    url: jdbc:mysql://150.109.164.25:3306/pay_center?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true
-    username: root
-    password: chujian888
+    url: jdbc:mysql://192.168.1.220:3306/pay_center?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true
+    username: kaifa
+    password: chujian8
     druid:
       initial-size: 50
       min-idle: 50
